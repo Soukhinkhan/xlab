@@ -1,0 +1,113 @@
+@use '../../utils' as *;
+
+/*----------------------------------------*/
+/*  3.2 Header Style 1
+/*----------------------------------------*/
+.header-1 {
+    
+    &.rs-sticky {
+        
+        .header__btn {
+            
+            &:hover {
+                
+                .text {
+                    h5, span {
+                        color: var(--rs-theme-primary);
+                    }
+                }
+            }
+            
+            .text {
+                h5, span {
+                    color: var(--rs-common-white);
+                }
+            }
+        }
+            
+        .logo {
+            display: none !important;
+            
+            &.logo-2 {
+                display: block !important;
+            }
+        }
+        
+        .main-menu {
+            & ul{
+                & li{
+                    > a {
+                        color: var(--rs-common-white);
+                        &::before {
+                            background: var(--rs-theme-primary);
+                        }
+                    }
+                    & .submenu{
+                        
+                        & li{
+                            & a{
+                                &:hover {
+                                    color: var(--rs-theme-primary);
+                                    &::before {
+                                        background: var(--rs-theme-primary);
+                                    }
+                                }
+                            }
+                            &:hover{
+                                & > a{
+                                    color: var(--rs-theme-primary);
+                                    &::before{
+                                        background-color: var(--rs-theme-primary);
+                                    }
+                                }
+                            }
+                            &.has-dropdown{
+                                &:hover{
+                                    & > a{
+                                        &::after{
+                                            color: var(--rs-theme-primary);
+                                        }
+                                    }
+                                }
+                            }
+                            
+                        }
+                    }
+                    & .mega-menu{
+                        & li{
+                            & ul{
+                                & li{
+                                    &:hover{
+                                        & > a{
+                                            color: var(--rs-theme-primary);
+                                            &::before{
+                                                background: var(--rs-theme-primary);
+                                            }
+                                        }
+                                    }
+                                    
+                                }
+                            }
+                            
+                            &:hover{
+                                & > .mega-menu-title{
+                                    color: var(--rs-theme-primary);
+                                }
+                            }
+                        }
+                    }
+                    
+                    &:hover{
+                        & > a{
+                            color: var(--rs-theme-primary);
+                            
+                            &::after{
+                                color: var(--rs-theme-primary);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

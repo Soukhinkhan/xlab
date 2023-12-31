@@ -1,0 +1,445 @@
+@use '../utils' as *;
+
+/*----------------------------------------*/
+/*  2.5 Carousel
+/*----------------------------------------*/
+
+// Common swiper dot10
+.rs-swiper-dot {
+	.swiper-pagination-bullet {
+		width: 10px;
+		height: 10px;
+		background-color: rgba(255, 255, 255, 0.2);
+
+		@include light {
+			background-color: rgba(6, 6, 6, 0.20);
+		}
+
+		opacity: 1;
+		border-radius: 30px;
+		position: relative;
+		margin: 0 8px !important;
+
+		&.swiper-pagination-bullet-active {
+			background-color: var(--rs-common-white);
+			background-color: rgba(255, 255, 255, 1);
+
+			@include light {
+				background-color: rgba(6, 6, 6, 1);
+			}
+		}
+	}
+	&.is-white {
+		.swiper-pagination-bullet {
+			background-color: rgba(255, 255, 255, 0.2);
+	
+			&.swiper-pagination-bullet-active {
+				background-color: rgba(255, 255, 255, 1);
+			}
+		}
+	}
+}
+.pagination__wrappper {
+	margin-top: 40px;
+}
+// Features carousel
+.features__active {
+	.slick-dots {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: absolute;
+		gap: 15px 15px;
+		top: 50%;
+		transform: translateY(-50%);
+		right: 0px;
+		flex-direction: column;
+		@media #{$xs, $sm, $md} {
+			flex-direction: row;
+			position: inherit;
+			margin-top: 50px;
+		}
+		li {
+			list-style: none;
+			width: 10px;
+			height: 10px;
+			display: inline-flex;
+			background-color: rgba(255, 255, 255, 0.20);
+			@include border-radius(50%);
+			cursor: pointer;
+			button {
+				font-size: 0px;
+			}
+
+			&.slick-active {
+				background-color: rgba(255, 255, 255, 1);
+			}
+		}
+	}
+}
+// Feedback slider
+.feedback__active {
+	.slick-list {
+		overflow: visible;
+		margin-left: -15px;
+		margin-right: -15px;
+	}
+	.slick-track {
+		display: flex;
+		justify-content: center;
+	}
+	.slick-slide {
+		margin-left: 15px;
+		margin-right: 15px;
+	}
+}
+.feedback__navigation {
+	button {
+		width: 60px;
+		height: 60px;
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		border: 1px solid rgba(255, 255, 255, 0.10);
+		@include border-radius(50%);
+		position: absolute;
+		left: 0;
+		top: 50%;
+		@extend %translateY1_2;
+		z-index: 55;
+		color: var(--rs-common-white);
+
+		@include light {
+			color: var(--rs-text-body);
+			border-color: var(--rs-text-body);
+		}
+		&::after {
+			position: absolute;
+			content: "";
+			height: 100%;
+			width: 100%;
+			background-image: var(--rs-gradient-1);
+			background-position: 100% 100%;
+			background-size: 300% 100%;
+			left: 0;
+			top: 0;
+			@include border-radius(50%);
+			z-index: -1;
+			opacity: 0;
+			@extend %rs-transition-3;
+		}
+		&:hover {
+			color: var(--rs-common-white);
+			border-color: transparent;
+
+			&::after {
+				opacity: 1;
+			}
+		}
+		&.feedback__button-next {
+			left: auto;
+			right: 0;
+		}
+	}
+}
+// Carousel Slick Dots
+.feedback__active {
+	.slick-dots {
+		margin: 0;
+		display: flex;
+		position: static;
+		padding-top: 50px;
+		align-items: center;
+		justify-content: center;
+		@media #{$xxs} {
+			padding-top: 30px;
+		}
+		li {
+			width: auto;
+			height: auto;
+			margin: 0 8px;
+			display: inline-block;
+			button {
+				font-size: 0;
+				background: rgba(255, 255, 255, 0.20);
+				margin: 0;
+				padding: 0;
+				width: 10px;
+				height: 10px;
+				display: block;
+				border-radius: 100%;
+				transition: 0.3s;
+				border: 1px solid rgba(255, 255, 255, 0.10);
+
+				@include light {
+					background: rgba(6, 6, 6, 0.2);
+				}
+			}
+			&:hover,
+			&.slick-active {
+				button {
+					background: rgba(255, 255, 255, 1);
+
+					@include light {
+						background-color: rgb(6, 6, 6);
+					}
+
+					&:before {
+						opacity: 1;
+						color: transparent;
+					}
+				}
+			}
+		}
+	}
+}
+.feedback__active {
+	&::after {
+		position: absolute;
+		content: "";
+		height: 100%;
+		width: 100%;
+		background: rgba(6, 6, 6, 1);
+		top: 0;
+		left: 100%;
+		mix-blend-mode: lighten;
+		opacity: 10%;
+	}
+	&::before {
+		position: absolute;
+		content: "";
+		height: 100%;
+		width: 100%;
+		background: rgba(6, 6, 6, 1);
+		top: 0;
+		right: 100%;
+		mix-blend-mode: lighten;
+		opacity: 10%;
+	}
+}
+
+.feedback__navigation-4 {
+	position: absolute;
+	right: 0px;
+	bottom: 100px;
+	z-index: 55;
+	position: absolute;
+	display: inline-flex;
+	align-items: center;
+	gap: 15px;
+	@media #{$xs, $sm, $md} {
+		bottom: 50px;
+	}
+	@media #{$xxs} {
+		display: none;
+	}
+	button {
+		width: 60px;
+		height: 60px;
+		display: inline-flex;
+		align-items: center;
+		border: 1px solid var(--rs-border-primary);
+		justify-content: center;
+		@include border-radius(50%);
+		color: var(--rs-text-primary);
+		font-size: 20px;
+
+		&:hover {
+			background-color: var(--rs-theme-primary);
+			color: var(--rs-common-white);
+			border-color: transparent;
+		}
+	}
+}
+
+// benefits Pagination
+.benefits__pagination {
+	position: absolute;
+	left: 50%;
+	@extend %translateX1_2;
+	bottom: -65px;
+}
+.swiper.benefits__active {
+	overflow: visible;
+	overflow-x: clip;
+}
+.service__navigation {
+	display: flex;
+	align-content: center;
+	gap: 15px;
+}
+// common Navigation css
+.service__navigation button {
+	width: 60px;
+	height: 60px;
+	display: inline-flex;
+	align-items: center;
+	border: 1px solid var(--rs-border-primary);
+	justify-content: center;
+	@include border-radius(50%);
+	color: var(--rs-text-primary);
+	font-size: 20px;
+
+	&:hover {
+		background-color: var(--rs-theme-primary);
+		color: var(--rs-common-white);
+		border-color: transparent;
+	}
+}
+// wealth carousel
+.wealth__wrapper {
+	&:hover {
+		.wealth__navigation {
+			button {
+				opacity: 1;
+			}
+		}
+	}
+}
+.wealth__navigation {
+	button {
+		width: 60px;
+		height: 60px;
+		display: inline-flex;
+		align-items: center;
+		border: 1px solid var(--rs-border-primary);
+		justify-content: center;
+		color: var(--rs-common-white);
+		font-size: 20px;
+		position: absolute;
+		top: 44%;
+		@extend %translateY1_2;
+		left: -30px;
+		z-index: 55;
+		background: rgb(6, 6, 6);
+		opacity: 0;
+		border-radius: 50px;
+		border: 1.5px solid rgba(255, 255, 255, 0.10);
+		background: rgba(6, 6, 6, 1);
+		@include light {
+			background-color: transparent;
+			border-color: var(--rs-border-primary);
+			color: var(--rs-text-primary);
+		}
+		&:hover {
+			background-color: var(--rs-theme-primary);
+			border-color: transparent;
+			color: var(--rs-text-primary);
+			@include light {
+				color: var(--rs-common-white);
+			}
+		}
+	}
+}
+.wealth__button-next{
+	left: auto !important;
+	right: -30px;
+}
+// Feedback 5 carousel
+.feedback__wrapper {
+	&:hover {
+		.feedback__navigation-5 {
+			button {
+				opacity: 1;
+			}
+		}
+	}
+}
+.feedback__navigation-5 {
+	button {
+		width: 60px;
+		height: 60px;
+		display: inline-flex;
+		align-items: center;
+		border: 1px solid var(--rs-border-primary);
+		justify-content: center;
+		@include border-radius(50%);
+		color: var(--rs-text-primary);
+		font-size: 20px;
+		position: absolute;
+		color: var(--rs-text-secondary);
+		top: 42.5%;
+		left: -30px;
+		z-index: 55;
+		background: var(--rs-common-white);
+		opacity: 0;
+		top: 50% !important;
+		transform: translateY(-50%) !important;
+		@include light {
+			color: var(--rs-text-primary);
+		}
+		&:hover {
+			background: var(--rs-theme-primary);
+			border-color: transparent;
+			color: var(--rs-common-white);
+		}
+	}
+}
+.feedback__button-next-5 {
+	left: auto !important;
+	right: -30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+// feedback__navigation-2 {
+.feedback__navigation-2 {
+	top: 50%;
+	width: calc(100% - 30px);
+	transform: translate(0, -50%);
+	z-index: 55;
+	position: absolute;
+	display: flex;
+	gap: 15px;
+	button {
+		width: 70px;
+		height: 70px;
+		display: inline-flex;
+		align-items: center;
+		border: 2px solid $white;
+		justify-content: center;
+		@include border-radius(0);
+		color: var(--rs-text-primary);
+		font-size: 20px;
+		&:hover {
+			background-color: var(--rs-common-white);
+			color: var(--rs-theme-primary);
+			border-color: transparent;
+		}
+	}
+}
+
+// portfolio__button-prev-2 {
+.portfolio__button-prev-2 {
+	top: 50%;
+	width: calc(100% - 30px);
+	transform: translate(0, -50%);
+	z-index: 55;
+	position: absolute;
+	display: flex;
+	gap: 15px;
+	button {
+		width: 70px;
+		height: 70px;
+		display: inline-flex;
+		align-items: center;
+		border: 2px solid $white;
+		justify-content: center;
+		@include border-radius(0);
+		color: var(--rs-text-primary);
+		font-size: 20px;
+		&:hover {
+			background-color: var(--rs-common-white);
+			color: var(--rs-theme-primary);
+			border-color: transparent;
+		}
+	}
+}

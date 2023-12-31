@@ -1,0 +1,69 @@
+@use "../../utils" as *;
+
+
+/*latest-benefit area start*/
+.latest-benefit{
+    &__title{
+
+        h2{
+
+
+
+            @media #{$xs} {
+                font-size: 30px;
+                line-height: 20px;
+            }
+            @media #{$sm} {
+                font-size: 50px;
+                line-height: 70px;
+            }
+            @media #{$lg,$xl} {
+                font-size: 45px;
+                line-height: 70px;
+            }
+        }
+
+        p{
+
+            color: #646464;
+            text-align: center;
+            font-family: Source Sans Pro;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 28px;
+        }
+    }
+
+     &__content-box{
+            width: 270px;
+            height: 271px;
+            padding: 20px;
+            margin-bottom: 30px;
+            flex-shrink: 0;
+            border-radius: 10px;
+            border: 1px solid rgba(0, 15, 32, 0.10);
+            background: #FFF;
+
+            @media #{$xl, $lg, $md, $sm, $xs, $xxs} {
+                width: 100%;
+                height: auto;
+            }
+            a{
+                img{
+                    width: 60px;
+                    height: 60px;
+                    flex-shrink: 0;
+                }
+            }
+
+            h4{
+
+            }
+
+            p{
+                padding-top: 6px;
+            }
+        }
+}
+/*latest-benefit area end*/

@@ -1,0 +1,305 @@
+$flaticon_finwise-font: "flaticon_finwise";
+
+@font-face {
+    font-family: $flaticon_finwise-font;
+    src: url("./flaticon_finwise.ttf?87ff5777ece29a60d6fb6f845dd613e5") format("truetype"),
+url("./flaticon_finwise.woff?87ff5777ece29a60d6fb6f845dd613e5") format("woff"),
+url("./flaticon_finwise.woff2?87ff5777ece29a60d6fb6f845dd613e5") format("woff2"),
+url("./flaticon_finwise.eot?87ff5777ece29a60d6fb6f845dd613e5#iefix") format("embedded-opentype"),
+url("./flaticon_finwise.svg?87ff5777ece29a60d6fb6f845dd613e5#flaticon_finwise") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon_finwise !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon_finwise-map: (
+    "credit-card": "\f101",
+    "support": "\f102",
+    "help": "\f103",
+    "donation": "\f104",
+    "shield": "\f105",
+    "wallet": "\f106",
+    "play-button": "\f107",
+    "team": "\f108",
+    "exchange": "\f109",
+    "payment-gateway": "\f10a",
+    "payment-method": "\f10b",
+    "currency": "\f10c",
+    "currency-1": "\f10d",
+    "money": "\f10e",
+    "worldwide": "\f10f",
+    "payment-method-1": "\f110",
+    "cyber-security": "\f111",
+    "wallet-1": "\f112",
+    "double-quotes": "\f113",
+    "facebook": "\f114",
+    "linkedin": "\f115",
+    "twitter": "\f116",
+    "calendar": "\f117",
+    "briefcase": "\f118",
+    "financial": "\f119",
+    "chat": "\f11a",
+    "location-pin": "\f11b",
+    "email": "\f11c",
+    "phone-receiver-silhouette": "\f11d",
+    "umbrella": "\f11e",
+    "checked": "\f11f",
+    "benefits": "\f120",
+    "play": "\f121",
+    "health-insurance": "\f122",
+    "health-insurance-1": "\f123",
+    "mortgage": "\f124",
+    "arrow": "\f125",
+    "email-1": "\f126",
+    "email-2": "\f127",
+    "mail-inbox-app": "\f128",
+    "subscription-model": "\f129",
+    "bitcoin-wallet": "\f12a",
+    "processing": "\f12b",
+    "calculator": "\f12c",
+    "invoice": "\f12d",
+    "accounting": "\f12e",
+    "contribute": "\f12f",
+    "tax": "\f130",
+    "roundabout": "\f131",
+    "three-arrows": "\f132",
+    "gear": "\f133",
+    "settings": "\f134",
+    "credit-card-1": "\f135",
+    "lender": "\f136",
+    "shield-1": "\f137",
+    "gift": "\f138",
+    "save-money": "\f139",
+    "technical-support": "\f13a",
+    "fair-trade": "\f13b",
+    "badge": "\f13c",
+    "growth": "\f13d",
+    "double-tap": "\f13e",
+    "gear-1": "\f13f",
+    "web-design": "\f140",
+    "subscribe": "\f141",
+    "shopping-bag": "\f142",
+    "crown": "\f143",
+    "star": "\f144",
+    "premium": "\f145",
+    "instagram": "\f146",
+);
+
+.flaticon-credit-card:before {
+    content: map-get($flaticon_finwise-map, "credit-card");
+}
+.flaticon-support:before {
+    content: map-get($flaticon_finwise-map, "support");
+}
+.flaticon-help:before {
+    content: map-get($flaticon_finwise-map, "help");
+}
+.flaticon-donation:before {
+    content: map-get($flaticon_finwise-map, "donation");
+}
+.flaticon-shield:before {
+    content: map-get($flaticon_finwise-map, "shield");
+}
+.flaticon-wallet:before {
+    content: map-get($flaticon_finwise-map, "wallet");
+}
+.flaticon-play-button:before {
+    content: map-get($flaticon_finwise-map, "play-button");
+}
+.flaticon-team:before {
+    content: map-get($flaticon_finwise-map, "team");
+}
+.flaticon-exchange:before {
+    content: map-get($flaticon_finwise-map, "exchange");
+}
+.flaticon-payment-gateway:before {
+    content: map-get($flaticon_finwise-map, "payment-gateway");
+}
+.flaticon-payment-method:before {
+    content: map-get($flaticon_finwise-map, "payment-method");
+}
+.flaticon-currency:before {
+    content: map-get($flaticon_finwise-map, "currency");
+}
+.flaticon-currency-1:before {
+    content: map-get($flaticon_finwise-map, "currency-1");
+}
+.flaticon-money:before {
+    content: map-get($flaticon_finwise-map, "money");
+}
+.flaticon-worldwide:before {
+    content: map-get($flaticon_finwise-map, "worldwide");
+}
+.flaticon-payment-method-1:before {
+    content: map-get($flaticon_finwise-map, "payment-method-1");
+}
+.flaticon-cyber-security:before {
+    content: map-get($flaticon_finwise-map, "cyber-security");
+}
+.flaticon-wallet-1:before {
+    content: map-get($flaticon_finwise-map, "wallet-1");
+}
+.flaticon-double-quotes:before {
+    content: map-get($flaticon_finwise-map, "double-quotes");
+}
+.flaticon-facebook:before {
+    content: map-get($flaticon_finwise-map, "facebook");
+}
+.flaticon-linkedin:before {
+    content: map-get($flaticon_finwise-map, "linkedin");
+}
+.flaticon-twitter:before {
+    content: map-get($flaticon_finwise-map, "twitter");
+}
+.flaticon-calendar:before {
+    content: map-get($flaticon_finwise-map, "calendar");
+}
+.flaticon-briefcase:before {
+    content: map-get($flaticon_finwise-map, "briefcase");
+}
+.flaticon-financial:before {
+    content: map-get($flaticon_finwise-map, "financial");
+}
+.flaticon-chat:before {
+    content: map-get($flaticon_finwise-map, "chat");
+}
+.flaticon-location-pin:before {
+    content: map-get($flaticon_finwise-map, "location-pin");
+}
+.flaticon-email:before {
+    content: map-get($flaticon_finwise-map, "email");
+}
+.flaticon-phone-receiver-silhouette:before {
+    content: map-get($flaticon_finwise-map, "phone-receiver-silhouette");
+}
+.flaticon-umbrella:before {
+    content: map-get($flaticon_finwise-map, "umbrella");
+}
+.flaticon-checked:before {
+    content: map-get($flaticon_finwise-map, "checked");
+}
+.flaticon-benefits:before {
+    content: map-get($flaticon_finwise-map, "benefits");
+}
+.flaticon-play:before {
+    content: map-get($flaticon_finwise-map, "play");
+}
+.flaticon-health-insurance:before {
+    content: map-get($flaticon_finwise-map, "health-insurance");
+}
+.flaticon-health-insurance-1:before {
+    content: map-get($flaticon_finwise-map, "health-insurance-1");
+}
+.flaticon-mortgage:before {
+    content: map-get($flaticon_finwise-map, "mortgage");
+}
+.flaticon-arrow:before {
+    content: map-get($flaticon_finwise-map, "arrow");
+}
+.flaticon-email-1:before {
+    content: map-get($flaticon_finwise-map, "email-1");
+}
+.flaticon-email-2:before {
+    content: map-get($flaticon_finwise-map, "email-2");
+}
+.flaticon-mail-inbox-app:before {
+    content: map-get($flaticon_finwise-map, "mail-inbox-app");
+}
+.flaticon-subscription-model:before {
+    content: map-get($flaticon_finwise-map, "subscription-model");
+}
+.flaticon-bitcoin-wallet:before {
+    content: map-get($flaticon_finwise-map, "bitcoin-wallet");
+}
+.flaticon-processing:before {
+    content: map-get($flaticon_finwise-map, "processing");
+}
+.flaticon-calculator:before {
+    content: map-get($flaticon_finwise-map, "calculator");
+}
+.flaticon-invoice:before {
+    content: map-get($flaticon_finwise-map, "invoice");
+}
+.flaticon-accounting:before {
+    content: map-get($flaticon_finwise-map, "accounting");
+}
+.flaticon-contribute:before {
+    content: map-get($flaticon_finwise-map, "contribute");
+}
+.flaticon-tax:before {
+    content: map-get($flaticon_finwise-map, "tax");
+}
+.flaticon-roundabout:before {
+    content: map-get($flaticon_finwise-map, "roundabout");
+}
+.flaticon-three-arrows:before {
+    content: map-get($flaticon_finwise-map, "three-arrows");
+}
+.flaticon-gear:before {
+    content: map-get($flaticon_finwise-map, "gear");
+}
+.flaticon-settings:before {
+    content: map-get($flaticon_finwise-map, "settings");
+}
+.flaticon-credit-card-1:before {
+    content: map-get($flaticon_finwise-map, "credit-card-1");
+}
+.flaticon-lender:before {
+    content: map-get($flaticon_finwise-map, "lender");
+}
+.flaticon-shield-1:before {
+    content: map-get($flaticon_finwise-map, "shield-1");
+}
+.flaticon-gift:before {
+    content: map-get($flaticon_finwise-map, "gift");
+}
+.flaticon-save-money:before {
+    content: map-get($flaticon_finwise-map, "save-money");
+}
+.flaticon-technical-support:before {
+    content: map-get($flaticon_finwise-map, "technical-support");
+}
+.flaticon-fair-trade:before {
+    content: map-get($flaticon_finwise-map, "fair-trade");
+}
+.flaticon-badge:before {
+    content: map-get($flaticon_finwise-map, "badge");
+}
+.flaticon-growth:before {
+    content: map-get($flaticon_finwise-map, "growth");
+}
+.flaticon-double-tap:before {
+    content: map-get($flaticon_finwise-map, "double-tap");
+}
+.flaticon-gear-1:before {
+    content: map-get($flaticon_finwise-map, "gear-1");
+}
+.flaticon-web-design:before {
+    content: map-get($flaticon_finwise-map, "web-design");
+}
+.flaticon-subscribe:before {
+    content: map-get($flaticon_finwise-map, "subscribe");
+}
+.flaticon-shopping-bag:before {
+    content: map-get($flaticon_finwise-map, "shopping-bag");
+}
+.flaticon-crown:before {
+    content: map-get($flaticon_finwise-map, "crown");
+}
+.flaticon-star:before {
+    content: map-get($flaticon_finwise-map, "star");
+}
+.flaticon-premium:before {
+    content: map-get($flaticon_finwise-map, "premium");
+}
+.flaticon-instagram:before {
+    content: map-get($flaticon_finwise-map, "instagram");
+}

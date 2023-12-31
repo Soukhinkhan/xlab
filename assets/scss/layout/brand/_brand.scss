@@ -1,0 +1,23 @@
+@use '../../utils' as *;
+
+// brand 1
+.brand__thumb {
+    img {
+        cursor: pointer;
+        height: auto;
+        width: auto;
+        @extend %rs-transition-3;
+        opacity: .50;
+    }
+    &:hover {
+        img {
+            opacity: 1;
+        }
+    }
+}
+
+.brand__active {
+    .swiper-wrapper {
+        align-items: center;
+    }
+}

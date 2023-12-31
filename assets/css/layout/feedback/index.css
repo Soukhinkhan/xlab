@@ -1,0 +1,111 @@
+.brand__thumb img {
+  -webkit-transition: all 0.3s 0s ease-out;
+  transition: all 0.3s 0s ease-out;
+}
+
+/* transform */
+.bg-theme-primary {
+  background-color: var(--rs-theme-primary);
+}
+
+:root {
+  /**
+  @font family declaration
+  */
+  --rs-ff-body: 'Outfit', sans-serif;
+  --rs-ff-heading: 'Outfit', sans-serif;
+  --rs-ff-fontawesome: "Font Awesome 6 Pro";
+  /**
+  @color declaration
+  */
+  --rs-common-white: #FFFFFF;
+  --rs-common-black: #000000;
+  --rs-common-placeholder: #484949;
+  --rs-common-selection: #262626;
+  --rs-body-primary: #ffffff;
+  --rs-body-secondary: rgb(255, 255, 255);
+  --rs-theme-primary: #00D563;
+  --rs-theme-secondary: #FB5141;
+  --rs-theme-tertiary: #674AD9;
+  --rs-theme-quaternary: #E540A3;
+  --rs-heading-primary: #00160A;
+  --rs-heading-secondary: #021D35;
+  --rs-text-body: #484949;
+  --rs-text-primary: #FFFFFF;
+  --rs-text-secondary: #111111;
+  --rs-text-1: #7C7E82;
+  --rs-gray-900: #00160A;
+  --rs-gray-800: #484949;
+  --rs-gray-700: #0D2216;
+  --rs-gray-200: #E3E8F4;
+  --rs-gray-100: #F9F9F9;
+  --rs-shadow-xl: #fff;
+  --rs-shadow-l: #fff;
+  --rs-shadow-m: #fff;
+  --rs-shadow-s: #fff;
+  --rs-bg-1: #FE5624;
+  --rs-bg-2: #0F1B24;
+  --rs-bg-3: #F9F9F9;
+  --rs-bg-4: rgb(18, 18, 18);
+  --rs-bg-5: #121212;
+  --rs-bg-6: rgba(255, 255, 255, 0.06);
+  --rs-bg-7: rgb(240, 235, 255);
+  --rs-bg-8: rgb(236, 235, 241);
+  --rs-bg-9: rgb(242, 242, 242);
+  --rs-bg-10: rgb(247, 247, 247);
+  --rs-border-primary: #00D563;
+  --rs-border-secondary: rgba(72, 73, 73, 0.4);
+  --rs-gradient-1: linear-gradient(90deg, rgb(251, 81, 65), rgb(103, 74, 217), rgb(103, 74, 217), rgb(251, 81, 65));
+  --rs-gradient-2: linear-gradient(90deg, #674AD9 0%, #FB5141 100%);
+  --rs-gradient-3: linear-gradient(90deg, #FB5141 0%, #089EFF 100%);
+  /**
+  @font weight declaration
+  */
+  --rs-fw-normal: normal;
+  --rs-fw-thin: 100;
+  --rs-fw-elight: 200;
+  --rs-fw-light: 300;
+  --rs-fw-regular: 400;
+  --rs-fw-medium: 500;
+  --rs-fw-sbold: 600;
+  --rs-fw-bold: 700;
+  --rs-fw-ebold: 800;
+  --rs-fw-black: 900;
+  /**
+  @font size declaration
+  */
+  --rs-fs-body: 16px;
+  --rs-fs-body2: 14px;
+  --rs-fs-p: 16px;
+  --rs-fs-h1: 60px;
+  --rs-fs-h2: 48px;
+  --rs-fs-h3: 27px;
+  --rs-fs-h4: 24px;
+  --rs-fs-h5: 18px;
+  --rs-fs-h6: 16px;
+  --rs-lh-body: 26px;
+  --rs-lh-body2: 17px;
+  --rs-lh-p: 26px;
+  --rs-lh-h1: 70px;
+  --rs-lh-h2: 58px;
+  --rs-lh-h3: 37px;
+  --rs-lh-h4: 34px;
+  --rs-lh-h5: 22px;
+  --rs-lh-h6: 24px;
+}
+
+.brand__thumb img {
+  cursor: pointer;
+  height: auto;
+  width: auto;
+  opacity: 0.5;
+}
+.brand__thumb:hover img {
+  opacity: 1;
+}
+
+.brand__active .swiper-wrapper {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}

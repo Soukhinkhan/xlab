@@ -1,0 +1,12 @@
+@use '../../utils' as *;
+
+/*----------------------------------------*/
+/*  3.3 Header Style 2
+/*----------------------------------------*/
+.header-2 {
+    .container {
+        @media (min-width: 1441px) {
+            max-width: 1750px !important;
+        }
+    }
+}
